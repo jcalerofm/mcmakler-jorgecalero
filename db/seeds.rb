@@ -24,7 +24,7 @@ property1 = Property.create(
   state: "Good"
   )
 
-property1.photo.attach(io: img1, filename:'apt1.jpg', content_type: 'image/jpg')
+property1.image.attach(io: img1, filename:'apt1.jpg', content_type: 'image/jpg')
 
 #Property2
 img2 = URI.open('https://images.unsplash.com/photo-1536376072261-38c75010e6c9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2851&q=80')
@@ -38,7 +38,7 @@ property2 = Property.create(
   state: "New"
   )
 
-property2.photo.attach(io: img2, filename:'apt2.jpg', content_type: 'image/jpg')
+property2.image.attach(io: img2, filename:'apt2.jpg', content_type: 'image/jpg')
 
 #Property 3
 
@@ -53,7 +53,7 @@ property3 = Property.create(
   state: "To be reformed"
   )
 
-property3.photo.attach(io: img3, filename:'apt3.jpg', content_type: 'image/jpg')
+property3.image.attach(io: img3, filename:'apt3.jpg', content_type: 'image/jpg')
 
 
 
