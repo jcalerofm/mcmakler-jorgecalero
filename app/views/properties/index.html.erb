@@ -1,0 +1,12 @@
+<div class="container">
+  HERE ARE ALL OUR AVAILABLE APARTMENTS TO RENT:
+<div class="cards">
+    <% @properties.each do |superpower| %>
+      <div class="card-category">
+        Some info here
+
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= link_to 'Create property', new_property_path %>
