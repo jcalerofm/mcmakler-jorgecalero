@@ -1,17 +1,20 @@
 <%= simple_form_for @property do |f| %>
 <div class="row">
   <div class="col">
-    <%= f.input :type_of_property, as: :radio_buttons, collection: ['House', 'Apartment'], label: 'Type of property' %>
-    <%= f.input :address, label: 'Address'%>
-    <%= f.input :sq_meters, label: 'Square meters' %>
+    <%= f.input :type_of_property, as: :radio_buttons,collection_wrapper_tag: 'div',
+            collection_wrapper_class: 'category-wrapper',
+            item_wrapper_class: 'category-item',
+            input_html: {class: 'category-selector labels'}, collection: ['House', 'Apartment'], label: 'Type of property' %>
+    <%= f.input :address, label: 'Address', input_html: { class: 'labels' } %>
+    <%= f.input :sq_meters, label: 'Square meters', input_html: { class: 'labels' } %>
   </div>
   <div class="col">
-    <%= f.input :year, label: 'Year of construction' %>
-    <%= f.input :num_of_rooms,  label: 'Number of rooms'  %>
-    <%= f.input :rent_price,  label: 'Rent price'  %>
+    <%= f.input :year, label: 'Year of construction', input_html: { class: 'labels' } %>
+    <%= f.input :num_of_rooms,  label: 'Number of rooms', input_html: { class: 'labels' }  %>
+    <%= f.input :rent_price,  label: 'Rent price', input_html: { class: 'labels' }  %>
   </div>
 </div>
-<%= f.input :state,  label: 'State/Description of the property'  %>
-<%= f.input :image, as: :file, label_:'Upload a picture' %>
-<%= f.submit 'Create' %>
+<%= f.input :state,  label: 'State/Description of the property', input_html: { class: 'labels' } %>
+<%= f.input :image, as: :file, input_html: { class: 'd-none' }, label_html: { class: 'btn btn-ghost'}, label: '📷 Upload a photo' %>
+<%= f.submit 'Create', class: 'btn btn-gradient'  %>
 <% end %>
