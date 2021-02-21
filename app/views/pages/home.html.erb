@@ -1,5 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<%= link_to "See all the available apartments", properties_path  %>
-<%= link_to 'Create property', new_property_path %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://images.unsplash.com/photo-1505960908081-78a5995238f2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2032&q=80); background-size: cover; background-position: bottom;">
+<div class="container pt-5" style="height: 100vh">
+<h1>Buy and sale of real estate, is done with McMakler.</h1>
+<p>Find the property of your dreams or value yours in the best conditions</p>
+<%= link_to "See all the properties", properties_path, class: "btn btn-ghost"  %>
+<%= link_to 'Add new property', new_property_path, class: "btn btn-ghost" %>
 
+</div>
+</div>
