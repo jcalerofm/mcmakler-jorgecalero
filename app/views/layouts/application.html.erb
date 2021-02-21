@@ -14,10 +14,12 @@
   </head>
 
   <body>
-    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon-home">
-  <%= link_to "McMakler", root_path, {style: 'font-family: Inter, sans serif; text-decoration: none; color: #004b54; font-size: 32px;'} %>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon-home" style="background-color: grey;">
+  <%= link_to "McMakler", root_path, style: 'font-family: Inter, sans serif; text-decoration: none; color: #004b54; font-size: 32px;' %>
 
   </div>
+  <div class="container pt-3">
     <%= yield %>
+  </div>
   </body>
 </html>
