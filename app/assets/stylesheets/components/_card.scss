@@ -1,6 +1,6 @@
 .card-product {
   overflow: hidden;
-  height: 120px;
+  height: 140px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
@@ -11,7 +11,7 @@
 
 .card-product img {
   height: 100%;
-  width: 220px;
+  width: 175px;
   object-fit: cover;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -39,7 +39,60 @@
     border-radius: 0;
     border: 0;
     margin-bottom: 1.5em;
+    padding-left: 0px;
   }
   .tarjeta:hover {
     transform: scale(1.02);
   }
+
+.titulo {
+  color: #124B54;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+.contenido {
+  display: block;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.fondo {
+    max-width: 800px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 0 0px 13px 1px rgba(22, 22, 26 , 0.18);
+    border-radius: 4px
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

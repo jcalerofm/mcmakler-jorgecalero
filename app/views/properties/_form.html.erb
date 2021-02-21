@@ -1,11 +1,17 @@
 <%= simple_form_for @property do |f| %>
-<%= f.input :address, label: 'Address'%>
-<%= f.input :type_of_property, as: :radio_buttons, collection: ['House', 'Apartment'], label: 'Type of property' %>
-<%= f.input :sq_meters, label: 'Square meters' %>
-<%= f.input :year, label: 'Year of construction' %>
-<%= f.input :num_of_rooms,  label: 'Number of rooms'  %>
-<%= f.input :rent_price,  label: 'Rent price'  %>
-<%= f.input :state,  label: 'State of the property'  %>
+<div class="row">
+  <div class="col">
+    <%= f.input :type_of_property, as: :radio_buttons, collection: ['House', 'Apartment'], label: 'Type of property' %>
+    <%= f.input :address, label: 'Address'%>
+    <%= f.input :sq_meters, label: 'Square meters' %>
+  </div>
+  <div class="col">
+    <%= f.input :year, label: 'Year of construction' %>
+    <%= f.input :num_of_rooms,  label: 'Number of rooms'  %>
+    <%= f.input :rent_price,  label: 'Rent price'  %>
+  </div>
+</div>
+<%= f.input :state,  label: 'State/Description of the property'  %>
 <%= f.input :image, as: :file, label_:'Upload a picture' %>
 <%= f.submit 'Create' %>
 <% end %>
